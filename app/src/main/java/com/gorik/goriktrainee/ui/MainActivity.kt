@@ -1,4 +1,4 @@
-package com.gorik.goriktrainee
+package com.gorik.goriktrainee.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
