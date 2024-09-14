@@ -12,5 +12,8 @@
     <string name="traps_label">Traps</string>
     <string name="lats_label">Lats</string>
     <string name="upperBack_label">UpperBack</string>
+    <string name="system">System</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
 
 </resources>
