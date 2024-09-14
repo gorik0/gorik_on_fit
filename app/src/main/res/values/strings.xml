@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">GorikTrainee</string>
+    <string name="biceps_label">Biceps</string>
+    <string name="triceps_label">Triceps</string>
+    <string name="shoulders_label">Shoulders</string>
+    <string name="quads_label">Quads</string>
+    <string name="hamstrings_label">Hamstrings</string>
+    <string name="calves_label">Calves</string>
+    <string name="glutes_label">Glutes</string>
+    <string name="core_label">Core</string>
+    <string name="chest_label">Chest</string>
+    <string name="traps_label">Traps</string>
+    <string name="lats_label">Lats</string>
+    <string name="upperBack_label">UpperBack</string>
+
 </resources>

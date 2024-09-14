@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.kapt)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.kotlinx.serialization)
     alias(libs.plugins.dagger.hilt)
 
 
@@ -72,8 +74,16 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
 //
-implementation(libs.dagger.hilt)
-kapt(libs.dagger.hilt.compiler)
+    implementation(libs.dagger.hilt)
+    kapt(libs.dagger.hilt.compiler)
+
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.room)
+    implementation(libs.room.coroutines)
+    ksp(libs.room.compiler)
+
+    implementation(libs.kotlinx.datetime)
+
 //
 //
 
