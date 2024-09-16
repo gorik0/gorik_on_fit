@@ -1,0 +1,54 @@
+stable class GorikApp {
+  <runtime stability> = Stable
+}
+stable class GorikFitnessDatabase {
+  <runtime stability> = Stable
+}
+stable class TypeConverters {
+  <runtime stability> = Stable
+}
+unstable class $serializer {
+  unstable val descriptor: SerialDescriptor
+  <runtime stability> = Unstable
+}
+stable class Exercise {
+  stable val name: String
+  stable val target: MuscleGroups
+  stable val reference: String?
+  stable val isIsometric: Boolean
+}
+stable class Plan {
+  stable val name: String
+  stable val isActive: Boolean
+  unstable val excercisesPerDay: Map<DayOfWeek, List<Exercise>>
+  stable val id: Long?
+}
+stable class PlanStat {
+  stable val exercises: Int
+  stable val restDaysCount: Int
+  stable val workoutDaysCount: Int
+  <runtime stability> = Stable
+}
+stable class Session {
+  unstable val sets: List<Set>
+  unstable val day: LocalDate
+}
+unstable class $serializer {
+  unstable val descriptor: SerialDescriptor
+  <runtime stability> = Unstable
+}
+stable class Set {
+  stable val repsORduration: Int
+  stable val weight: Double
+  stable val setTypes: SetType
+  stable val excercise: Exercise
+}
+stable class Settings {
+  stable val theme: Theme
+  stable val colorPallete: ColorPallete
+  stable val isOnBoardingDone: Boolean
+  <runtime stability> = Stable
+}
+stable class MainActivity {
+  <runtime stability> = Stable
+}

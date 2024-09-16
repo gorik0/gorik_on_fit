@@ -1,4 +1,4 @@
-package com.gorik.goriktrainee.data
+package com.gorik.goriktrainee.data.local
 
 import android.content.Context
 import androidx.room.Database
@@ -20,6 +20,7 @@ import com.gorik.goriktrainee.data.model.Session
         Exercise::class,
     ]
 )
+@androidx.room.TypeConverters(TypeConverters::class)
 abstract class GorikFitnessDatabase : RoomDatabase() {
 
     abstract val planDao: PlanDao

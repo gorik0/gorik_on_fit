@@ -18,7 +18,7 @@ interface ExerciseDao {
 
 
     @Query("SELECT * from exercise")
-    suspend fun stream(): kotlinx.coroutines.flow.Flow<List<Exercise>>
+    fun stream(): kotlinx.coroutines.flow.Flow<List<Exercise>>
 
     @Query("SELECT * from exercise where name = :name")
     suspend fun get (name: String): Exercise?

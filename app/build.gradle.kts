@@ -27,6 +27,7 @@ android {
         }
     }
 
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -47,19 +48,27 @@ android {
     buildFeatures {
         compose = true
     }
+    buildFeatures {
+        compose = true
+    }
+    composeCompiler {
+        enableStrongSkippingMode = true
+        metricsDestination = file("$projectDir/reports/metrics")
+        reportsDestination = file("$projectDir/reports")
+    }
 //    composeOptions {
 //        kotlinCompilerExtensionVersion = "1.5.1"
 //    }
-    composeCompiler {
-        reportsDestination = layout.buildDirectory.dir("compose_compiler")
-        stabilityConfigurationFile = rootProject.layout.projectDirectory.file("stability_config.conf")
-    }
+//    composeCompiler {
+//        reportsDestination = layout.buildDirectory.dir("compose_compiler")
+//        stabilityConfigurationFile = rootProject.layout.projectDirectory.file("stability_config.conf")
+//    }
     packaging {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-}
+
 
 dependencies {
 
@@ -93,4 +102,4 @@ dependencies {
 //
 //
 
-}
+}}
