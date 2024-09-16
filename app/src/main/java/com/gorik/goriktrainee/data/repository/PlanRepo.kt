@@ -11,7 +11,7 @@ interface PlanRepo {
     val stream: Flow<List<Plan>>
     val current: Flow<Plan?>
 
-    fun getById(id: Long): Flow<Plan?>
+    fun getById(id: Long?): Flow<Plan?>
     fun upsert(plan: Plan)
     fun remove(id: Long)
     fun switchPlan(plan: Plan)

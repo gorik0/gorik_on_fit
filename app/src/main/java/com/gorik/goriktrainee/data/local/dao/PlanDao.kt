@@ -24,7 +24,7 @@ interface PlanDao {
 
 
     @Query("SELECT * from plan_table where isActive  =1")
-    fun currentActiveStream(): Flow<List<Plan>>
+    fun currentActiveStream(): Flow<Plan>
 
 
     @Transaction

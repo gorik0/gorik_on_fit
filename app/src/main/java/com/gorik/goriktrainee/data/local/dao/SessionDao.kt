@@ -2,6 +2,7 @@ package com.gorik.goriktrainee.data.local.dao
 
 import androidx.room.Dao
 import androidx.room.Query
+import androidx.room.Upsert
 import com.gorik.goriktrainee.data.model.Session
 import com.gorik.goriktrainee.data.model.Set
 import kotlinx.coroutines.flow.Flow
@@ -11,6 +12,10 @@ import kotlinx.datetime.LocalDate
 @Dao
 interface SessionDao {
 
+
+
+    @Upsert
+    suspend fun upsert(session: Session)
 
 
     @Query("UPDATE session SET sets = :sets WHERE day = :date")
