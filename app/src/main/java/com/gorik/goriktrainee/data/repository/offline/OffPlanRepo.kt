@@ -8,8 +8,9 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.map
 import java.time.LocalDate
+import javax.inject.Inject
 
-class OffPlanRepo(val dao: PlanDao) : PlanRepo {
+class OffPlanRepo @Inject constructor (val dao: PlanDao) : PlanRepo {
     override val stream: Flow<List<Plan>>
         get() = dao.stream()
     override val current: Flow<Plan?>

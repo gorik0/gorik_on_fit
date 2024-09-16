@@ -4,8 +4,9 @@ import com.gorik.goriktrainee.data.local.dao.ExerciseDao
 import com.gorik.goriktrainee.data.model.Exercise
 import com.gorik.goriktrainee.data.repository.ExercisesRepo
 import kotlinx.coroutines.flow.Flow
+import javax.inject.Inject
 
-class OffExerciseRepo(val dao: ExerciseDao) : ExercisesRepo {
+class OffExerciseRepo @Inject constructor(val dao: ExerciseDao) : ExercisesRepo {
 
     override val stream: Flow<List<Exercise>>
         get() = dao.stream()

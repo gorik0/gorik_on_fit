@@ -1,4 +1,3 @@
 package,name,composable,skippable,restartable,readonly,inline,isLambda,hasDefaults,defaultsGroup,groups,calls,
 com.gorik.goriktrainee.ui.Greeting,Greeting,1,1,1,0,0,0,0,0,1,1,
 com.gorik.goriktrainee.ui.GreetingPreview,GreetingPreview,1,1,1,0,0,0,0,0,1,1,
-com.gorik.goriktrainee.ui.theme.GorikTraineeTheme,GorikTraineeTheme,1,1,1,0,0,0,1,0,3,3,

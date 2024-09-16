@@ -98,8 +98,13 @@ dependencies {
     ksp(libs.room.compiler)
 
     implementation(libs.kotlinx.datetime)
+    implementation(libs.androidx.datastore)
+
 
 //
 //
 
 }}
+dependencies {
+    implementation(libs.androidx.datastore.preferences.core.jvm)
+}

@@ -12,7 +12,9 @@ hilt = "2.52"
 dateTime = "0.6.0"
 room="2.6.1"
 kotlin-serialization="1.6.3"
+
 ksp="2.0.10-1.0.24"
+datastore = "1.1.1"
 
 
 [libraries]
@@ -42,10 +44,12 @@ dagger-hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", ver
 room = { module = "androidx.room:room-runtime", version.ref = "room" }
 room-coroutines = { module = "androidx.room:room-ktx", version.ref = "room" }
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+androidx-datastore = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
 
 
 kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "dateTime" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlin-serialization" }
+androidx-datastore-preferences-core-jvm = { group = "androidx.datastore", name = "datastore-preferences-core-jvm", version.ref = "datastore" }
 
 
 

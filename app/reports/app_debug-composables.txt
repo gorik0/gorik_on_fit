@@ -3,8 +3,3 @@ restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun Greeting(
   stable modifier: Modifier? = @static Companion
 )
 restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun GreetingPreview()
-restartable skippable scheme("[0, [0]]") fun GorikTraineeTheme(
-  stable darkTheme: Boolean = @dynamic isSystemInDarkTheme($composer, 0)
-  stable dynamicColor: Boolean = @static true
-  stable content: Function2<Composer, Int, Unit>
-)

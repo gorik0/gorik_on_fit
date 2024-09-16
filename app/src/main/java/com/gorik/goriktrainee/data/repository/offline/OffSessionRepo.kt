@@ -9,8 +9,9 @@ import com.gorik.goriktrainee.utils.isToday
 import com.gorik.goriktrainee.utils.updateAsMutable
 import kotlinx.coroutines.flow.Flow
 import kotlinx.datetime.LocalDate
+import javax.inject.Inject
 
-class OffSessionRepo(
+class OffSessionRepo @Inject constructor(
     val dao: SessionDao
 ) : SessionRepo {
     override val stream: Flow<List<Session>>
